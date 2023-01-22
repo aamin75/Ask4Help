@@ -15,6 +15,12 @@ h4{
   font-size:small;
 }
 
+.follow_us img{
+  height: 15px;
+  width: 15px;
+  
+}
+
 .footer{
   position: absolute;
   bottom: 0px;
@@ -22,7 +28,7 @@ h4{
   text-align: start;
   justify-content:space-around;
   flex-direction: row;
-  background-color: #6cf;
+  background-color: lightgrey;
   width:100%;
   
 }
