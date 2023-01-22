@@ -1,12 +1,10 @@
 import React from "react";
 import { useRef } from "react";
-// import Twitter from "../../Assets/twitter.png";
 
 import './Footer.css';
 
 
 function Footer (){
-    // const twitterIcon= useRef(Twitter);
     return(
         <div className="footer">
                 <div className="about_us">

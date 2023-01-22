@@ -5,9 +5,11 @@ import CreatePost from './pages/CreatePost/CreatePost';
 import ShowPost from './pages/ShowPost/ShowPost';
 import Register from './pages/Register/Register';
 import Login from './pages/Login/Login';
+import Categories from './pages/Categories/Categories';
 import Footer from './components/Footer/Footer';
 import NavBar from "./components/Header/NavBar";
 import './App.css';
+import Notifications from './pages/Notifications/Notifications';
 
 
 const Layout= ()=>{
@@ -37,15 +39,23 @@ const router = createBrowserRouter([
         path: "/createpost",
         element: <CreatePost />,
       },
+      {
+        path: "/categories",
+        element: <Categories />,
+      },
+      {
+        path: "/notifications",
+        element: <Notifications />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
     ],
-  },
-  {
-    path: "/register",
-    element: <Register />,
-  },
-  {
-    path: "/login",
-    element: <Login />,
   },
 ]);
 
