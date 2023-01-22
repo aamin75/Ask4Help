@@ -1,11 +1,14 @@
-import Footer from './components/Footer/Footer';
-import './App.css';
-import NavBar from "./components/Header/NavBar";
-import Home from './pages/Home/Home';
+import { useState } from 'react';
 import { createBrowserRouter, RouterProvider, Route, Outlet } from "react-router-dom";
+import Home from './pages/Home/Home';
 import CreatePost from './pages/CreatePost/CreatePost';
+import ShowPost from './pages/ShowPost/ShowPost';
+import Register from './pages/Register/Register';
+import Login from './pages/Login/Login';
+import Footer from './components/Footer/Footer';
+import NavBar from "./components/Header/NavBar";
+import './App.css';
 
-const [isAuth, setIsAuth] = useState(false); // may move to another file
 
 const Layout= ()=>{
   return(
@@ -42,11 +45,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <Login seIsAuth={setIsAuth} />,
+    element: <Login />,
   },
 ]);
 
 function App() {
+  // const [isAuth, setIsAuth] = useState(false); // may move to another file
   return (
     <div className="container">
       <RouterProvider router={router} />

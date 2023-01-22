@@ -9,7 +9,7 @@ import Login from "../../pages/Login/Login";
 function  NavBar()  {
   const [isAuth, setIsAuth] = useState(false);
   return (
-    <Router>
+    // <Router>
     <nav>
       <Link to="/"> Home </Link>
       <Link to="/categories"> Categories </Link>
@@ -18,12 +18,12 @@ function  NavBar()  {
       <Link to="/login"> Login </Link>
     </nav>
 
-    {/* <Routes>
+    /* <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/createpost" element={<CreatePost />} />
       <Route path="/login" element={<Login seIsAuth={setIsAuth} />} />
-    </Routes> */}
-  </Router>
+    </Routes> */
+  // </Router>
   )
 }
 
