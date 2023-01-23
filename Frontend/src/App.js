@@ -37,7 +37,7 @@ const router = createBrowserRouter([
         element: <ShowPost />,
       },
       {
-        path: "/createpost",
+        path: "/post",
         element: <CreatePost />,
       },
       {
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
         element: <Notifications />,
       },
       {
-        path: "/search",
+        path: "/posts",
         element: <SearchPost />,
       },
       {

@@ -14,8 +14,8 @@ function  NavBar()  {
       <Link to="/"><img src={Ask4Help} alt="Ask4Help"/></Link>
       <Link to="/"> Home </Link>
       <Link to="/categories"> Categories </Link>
-      <Link to="/search"> Search </Link>
-      <Link to="/createpost"> Create Post </Link>
+      <Link to="/posts"> Search </Link>
+      <Link to="/post"> Create Post </Link>
       <Link to="/notifications"> Notifications </Link>
       <Link to="/login"> Login </Link>
     </nav>
