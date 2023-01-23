@@ -7,7 +7,6 @@ import './NavBar.css';
 import Ask4Help from "../../Assets/Ask4Help.png";
 
 function  NavBar()  {
-  // const logoImage= useRef(Ask4Help);
   const [isAuth, setIsAuth] = useState(false);
   return (
     // <Router>
@@ -15,6 +14,7 @@ function  NavBar()  {
       <Link to="/"><img src={Ask4Help} alt="Ask4Help"/></Link>
       <Link to="/"> Home </Link>
       <Link to="/categories"> Categories </Link>
+      <Link to="/search"> Search </Link>
       <Link to="/createpost"> Create Post </Link>
       <Link to="/notifications"> Notifications </Link>
       <Link to="/login"> Login </Link>

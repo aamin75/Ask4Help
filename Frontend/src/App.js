@@ -6,10 +6,11 @@ import ShowPost from './pages/ShowPost/ShowPost';
 import Register from './pages/Register/Register';
 import Login from './pages/Login/Login';
 import Categories from './pages/Categories/Categories';
+import Notifications from './pages/Notifications/Notifications';
+import SearchPost from './pages/SearchPost/SearchPost';
 import Footer from './components/Footer/Footer';
 import NavBar from "./components/Header/NavBar";
 import './App.css';
-import Notifications from './pages/Notifications/Notifications';
 
 
 const Layout= ()=>{
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/notifications",
         element: <Notifications />,
+      },
+      {
+        path: "/search",
+        element: <SearchPost />,
       },
       {
         path: "/register",
