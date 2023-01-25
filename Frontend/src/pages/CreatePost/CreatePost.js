@@ -1,5 +1,6 @@
 import React from "react";
 import './CreatePost.css'; 
+
 function CreatePost() {
 
   return (
@@ -8,18 +9,13 @@ function CreatePost() {
         <h1>Create A Post</h1>
         <div className="inputGp">
           <label> Title:</label>
-          <input placeholder="Title..."
-            
-          />
+          <input type="text" placeholder="Title..."/>
         </div>
         <div className="inputGp">
           <label> Post:</label>
-          <textarea placeholder="Post..."
-            />
-            <input type="file" id="img" name="img" accept="image/*"></input>
+          <textarea placeholder="Your text here ..."/>
+          <input type="file" id="img" name="img" accept="image/*"></input>
         </div>
-        
-
         <button> Submit Post</button>
       </div>
     </div>

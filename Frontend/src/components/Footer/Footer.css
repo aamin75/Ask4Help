@@ -1,0 +1,34 @@
+a {
+  text-decoration: none;
+  margin: 0px;
+}
+
+h5{
+  margin:5px 0px;
+}
+
+h4{
+  margin:5px 0px;
+}
+
+.follow_us a {
+  font-size:small;
+}
+
+.follow_us img{
+  height: 15px;
+  width: 15px;
+  
+}
+
+.footer{
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  text-align: start;
+  justify-content:space-around;
+  flex-direction: row;
+  background-color: lightgrey;
+  width:100%;
+  
+}
