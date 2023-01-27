@@ -10,6 +10,8 @@ import Notifications from './pages/Notifications/Notifications';
 import SearchPost from './pages/SearchPost/SearchPost';
 import Footer from './components/Footer/Footer';
 import NavBar from "./components/Header/NavBar";
+import LeftSide from './components/Sidebar/LeftSide';
+import RightSide from './components/Sidebar/RightSide'
 import './App.css';
 
 
@@ -17,7 +19,13 @@ const Layout= ()=>{
   return(
     <>
       <NavBar />
-      <Outlet />
+      <div className='main'>
+        <LeftSide />
+        <div className='center'>
+          <Outlet />
+        </div>
+        <RightSide />
+      </div>
       <Footer />
     </>
   )

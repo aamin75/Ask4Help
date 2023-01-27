@@ -7,15 +7,22 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.main{
+  display: flex;
+  /* align-content: space-between; */
+}
 
+.main .lAside{
+  flex: 3;
+  background-color: red;
+}
 
+.main .rAside{
+  flex: 3;
+  background-color:blueviolet;
+}
 
-
-
-
-
-
-
-
-
-
+.main .center{
+  flex: 6;
+  background-color: aqua;
+}
