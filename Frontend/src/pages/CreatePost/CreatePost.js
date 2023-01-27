@@ -8,10 +8,10 @@ function CreatePost() {
 const  [title, setTitle] = useState("");
 const  [post, setpost] = useState("");
 
-const postsCollectionRef = collection(db, "post")
+const postsCollection = collection(db, "post")
 let navigate = useNavigate();
 const createPost = async() =>{
- await addDoc(postCollection,{
+ await addDoc(postsCollection,{
   title,
   post,
   
