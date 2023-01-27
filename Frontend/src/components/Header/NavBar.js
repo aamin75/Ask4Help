@@ -33,7 +33,7 @@ function  NavBar()  {
     // <Router>
     <nav>
       <Link to="/"><img src={Ask4Help} alt="Ask4Help"/></Link>
-      <Link to="/"> Home </Link>
+      <Link to="/"> Home{isAuth} </Link>
       <Link to="/categories"> Categories </Link>
       <Link to="/posts"> Search </Link>
       <Link to="/post"> Create Post </Link>
