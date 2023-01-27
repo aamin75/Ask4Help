@@ -1,6 +1,7 @@
 a {
   text-decoration: none;
   margin: 0px;
+  color: aliceblue;
 }
 
 h5{
@@ -9,6 +10,7 @@ h5{
 
 h4{
   margin:5px 0px;
+  color: white;
 }
 
 .follow_us a {
@@ -28,7 +30,7 @@ h4{
   text-align: start;
   justify-content:space-around;
   flex-direction: row;
-  background-color: lightgrey;
+  background-color: rgb(61, 61, 61);
   width:100%;
   
 }
