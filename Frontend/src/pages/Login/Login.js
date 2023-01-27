@@ -46,12 +46,12 @@ function Login () {
 
   return (
     <div className='container'>
-        <h1>SignIn with Email</h1>
-        <input type={"email"} placeholder="Enter Email" onChange={(e) => setEmail(e.target.value)}/>
-        <input type={"password"} placeholder="Enter Password" onChange={(e) => setPassword(e.target.value)}/>
-        <button className='btn-1' onClick={signUp}>SignUp</button>
-        <button className='btn-2' onClick={signIn}>SignIn</button>
-    </div>
+      <h1>SignIn with Email</h1>
+      <input type={"email"} placeholder="Enter Email" onChange={(e) => setEmail(e.target.value)}/>
+      <input type={"password"} placeholder="Enter Password" onChange={(e) => setPassword(e.target.value)}/>
+      <button className='btn-1' onClick={signUp}>SignUp</button>
+      <button className='btn-2' onClick={signIn}>SignIn</button>
+  </div>
   )
 }
 
