@@ -11,16 +11,13 @@ const  [post, setpost] = useState("");
 const postsCollectionRef = collection(db, "post")
 let navigate = useNavigate();
 const createPost = async() =>{
- await addDoc(postsCollectionRef,{
+ await addDoc(postCollection,{
   title,
   post,
   
-  author:{name: auth.currentUser.displayName , id: auth.currentUser.uid}} )
+  author:{name:auth.currentUser.displayName ,id:auth.currentUser.uid}} )
   navigate("/");
 };
-
-
-
 
   return (
     <div className="Post-Page">
@@ -29,22 +26,18 @@ const createPost = async() =>{
         <div className="inputGp">
           <label> Title:</label>
           <input placeholder="Title..." onChange={(event) =>{
-            setTitle(event.target.value);
-          }
-          }
-            
-          />
+              setTitle(event.target.value);
+            }
+          }/>
         </div>
         <div className="inputGp">
           <label> Post:</label>
           <textarea placeholder="Post..." onChange={(event) =>{
-            setpost(event.target.value);
-          }
-          } />
-            <input type="file" id="img" name="img" accept="image/*"></input>
+              setpost(event.target.value);
+            }
+          }/>
+          <input type="file" id="img" name="img" accept="image/*"></input>
         </div>
-        
-
         <button onClick={createPost}> Submit Post</button>
       </div>
     </div>
