@@ -3,8 +3,11 @@ import "./LeftSide.css";
 
 function LeftSide(){
   return(
-    <div className="lAside">
-      LeftSide
+  <div className="lolo" >
+    
+    
+    <div className="left-side"></div>
+    
     </div>
   )
 };

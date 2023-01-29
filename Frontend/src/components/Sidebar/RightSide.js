@@ -4,7 +4,7 @@ import "./RightSide.css";
 function RightSide(){
   return(
     <div className="rAside">
-      RightSide
+      
     </div>
   )
 };

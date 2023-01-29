@@ -75,9 +75,18 @@ const router = createBrowserRouter([
 function App() {
   // const [isAuth, setIsAuth] = useState(false); // may move to another file
   return (
-    <div className="container">
-      <RouterProvider router={router} />
+
+    <>
+    <div className='homee'>
+    <div className='home-container'>
+
+
+
     </div>
+    </div>
+      <div className="container">
+      <RouterProvider router={router} />
+    </div></>
    
   );
 }

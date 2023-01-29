@@ -1,4 +1,9 @@
+*{
+  font-family:sans-serif; 
+  font-size: 15px;
+}
 a {
+
   text-decoration: none;
   margin: 0px;
   color: aliceblue;
@@ -6,17 +11,23 @@ a {
 
 h5{
   margin:5px 0px;
+  
 }
 
 h4{
   margin:5px 0px;
   color: white;
+  
 }
 
 .follow_us a {
   font-size:small;
+  font-family:sans-serif; 
+  font-size: 15px;
 }
-
+.follow_us a:hover {
+color: brown;
+}
 .follow_us img{
   height: 15px;
   width: 15px;

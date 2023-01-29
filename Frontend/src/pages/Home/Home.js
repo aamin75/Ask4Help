@@ -1,16 +1,18 @@
 import React from "react";
 
 
+function  Home()  {
+  <div className="home-container">
 
-function  Home(isAuth)  {
-  if(isAuth){
-    return (
-      <div>Home user logged in</div>
-    )
-  } else {
-    return (
-      <div>Home no user</div>
-    )
-  }
+
+
+  </div>
+  
+
+  
+  return (
+
+  <div>Home</div>
+  )
 }
 export default Home;
