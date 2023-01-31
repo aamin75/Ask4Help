@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
 import { auth, db } from "../Login/firebase-config";
-
+import './Home.css';
 
 
 function  Home(isAuth)  {
