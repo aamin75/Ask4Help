@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React from 'react';
 import { createBrowserRouter, RouterProvider, Route, Outlet } from "react-router-dom";
 import Home from './pages/Home/Home';
 import CreatePost from './pages/CreatePost/CreatePost';
@@ -75,16 +75,7 @@ const router = createBrowserRouter([
 function App() {
   // const [isAuth, setIsAuth] = useState(false); // may move to another file
   return (
-
-    <>
-    <div className='homee'>
-    <div className='home-container'>
-
-
-
-    </div>
-    </div>
-      <div className="container">
+    <><div className='home-container1'></div><div className="container">
       <RouterProvider router={router} />
     </div></>
    

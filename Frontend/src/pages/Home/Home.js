@@ -1,18 +1,25 @@
-import React from "react";
-
-
-function  Home()  {
-  <div className="home-container">
+import React, { useEffect, useState } from "react";
+import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
+import { auth, db } from "../Login/firebase-config";
 
 
 
-  </div>
+function  Home(isAuth)  {
+  const [postLists, setPostList]= useState([]);
+  const postsCollection = collection(db, "post");
+useEffect(()=>{
+const getPost = async () => {
+  const data = await getDocs(postsCollection);
+  setPostList(data.docs.map((doc)  => ({...doc.data(), id: doc.id})));
+};
+getPost();
+
+});
+
   
-
-  
-  return (
-
-  <div>Home</div>
-  )
+  return <div className="home-container">{postLists.map(( post)=>{
+    return <div className="post">{post.title}</div>
+  })}</div>
+     
 }
 export default Home;

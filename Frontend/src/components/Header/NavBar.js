@@ -30,13 +30,15 @@ function  NavBar()  {
 
 
   return (
+    
     // <Router>
     <nav>
       <Link to="/"><img src={Ask4Help} alt="Ask4Help"/></Link>
       <Link to="/"> Home{isAuth} </Link>
       <Link to="/categories"> Categories </Link>
       <Link to="/posts"> Search </Link>
-      <Link to="/post"> Create Post </Link>
+      {isAuth ? (<Link to="/post"> Create Post </Link>):(<></>)}
+
       <Link to="/notifications"> Notifications </Link>
       {!isAuth ? ( 
           <Link to="/login">Login</Link> 

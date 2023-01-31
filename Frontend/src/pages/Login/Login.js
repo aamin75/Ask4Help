@@ -13,7 +13,6 @@ function Login () {
 
     signInWithEmailAndPassword (auth, email, password)
       .then((userCredential) => {
-        // Signed in 
         const user = userCredential.user;
         console.log(user);
         window.location.pathname = "/post"
@@ -30,22 +29,20 @@ function Login () {
   const signUp = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        // Signed up 
+      
         const user = userCredential.user;
         console.log(user);
-        alert("Create user account")
-        
+        alert("Create user account")  
       })
       .catch((error) => {
         const errorCode = error.code;
         alert(errorCode)
-        // ..
       }
     );
   }
 
   return (
-    <div className='container'>
+    <div className='container-login'>
       <h1>SignIn with Email</h1>
       <input type={"email"} placeholder="Enter Email" onChange={(e) => setEmail(e.target.value)}/>
       <input type={"password"} placeholder="Enter Password" onChange={(e) => setPassword(e.target.value)}/>

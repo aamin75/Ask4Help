@@ -3,21 +3,22 @@
 }
 
 .left-side{
-background-color: rgb(86, 86, 86);
+ 
+background-color: rgb(145, 145, 145);
 height: 775px;
 margin-top: 80px;
 width: 200px;
 position: fixed;
-left: -180px; /* set the initial position of the sidebar */
+left: -180px; 
 top: 0;
 bottom: 0;
- /* set the width of the sidebar */
+ 
 
 transition: left 0.3s;
 }
 
 .left-side:hover{
-  left: 0; /* reveal the sidebar when hovered over */
+  left: 0; 
 
 }
 
