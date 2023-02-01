@@ -15,7 +15,7 @@ function Login () {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
-        window.location.pathname = "/post"
+        window.location.pathname = "/"
         alert("Success sign in")
       })
       .catch((error) => {
