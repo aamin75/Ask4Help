@@ -5,7 +5,12 @@ import './Home.css';
 
 
 function  Home(isAuth)  {
-  const [postLists, setPostList]= useState([{title:"test1", post:"this is a post", email:"user@gmail.com"},{title:"test5", post:"this is a post3", email:"user3@gmail.com",}, {title:"this title", post:"this is a post test", email:"admin@gmail.com"}]);
+  const mockPosts=[    
+    {title:"Test 1",post:"text for 1st post", email:"user1@email.com"},
+    {title:"Test 2",post:"text for 2nd post", email:"user2@email.com"},
+    {title:"Test 3",post:"text for 3rd post", email:"user3@email.com"},
+  ];
+  const [postLists, setPostList]= useState(mockPosts);
   const postsCollection = collection(db, "post");
   useEffect(()=>{
     const getPost = async () => {

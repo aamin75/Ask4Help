@@ -37,9 +37,12 @@ function  NavBar()  {
       <Link to="/"> Home{isAuth} </Link>
       <Link to="/categories"> Categories </Link>
       <Link to="/posts"> Search </Link>
-      {isAuth ? (<Link to="/post"> Create Post </Link>):(<></>)}
+      {isAuth ? (<>
+        <Link to="/post"> Create Post </Link>
+        <Link to="/notifications"> Notifications </Link>
+      </>):(<></>)}
 
-      <Link to="/notifications"> Notifications </Link>
+      
       {!isAuth ? ( 
           <Link to="/login">Login</Link> 
         ) : ( 
