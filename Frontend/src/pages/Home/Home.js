@@ -19,6 +19,7 @@ function  Home(isAuth)  {
     return (
       <>
         <div className="post">{post.title}</div>
+        <h3>{post.post}</h3>
         <h3>{post.email}</h3>
       </>
     )

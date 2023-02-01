@@ -4,6 +4,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
+  // Alternative 2
   apiKey: "AIzaSyB4VtehDv0zOFsV2Je5vxBU5EdcmpOiBsA",
   authDomain: "ask4helpdemo.firebaseapp.com",
   projectId: "ask4helpdemo",
@@ -11,6 +12,7 @@ const firebaseConfig = {
   messagingSenderId: "536948525723",
   appId: "1:536948525723:web:eeff0df4f08d9d846a543e",
   measurementId: "G-PHYPPBJ403"
+  // Alternative 1
   // apiKey: "AIzaSyDp7bIoaicXRd9SnxtgEn0EtT41PG1D4vs",
   // authDomain: "ask4help-ca30d.firebaseapp.com",
   // projectId: "ask4help-ca30d",
