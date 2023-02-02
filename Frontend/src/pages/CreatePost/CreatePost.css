@@ -16,6 +16,11 @@
     height: calc(100vh - 80px);
     display: grid;
     place-items: center;
+    position: fixed; 
+  top: 50%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
   }
 
   .create_Post_box {

@@ -1,25 +1,63 @@
 nav {
-    margin: 0;
-    width: 100%;
-    height: 80px;
-    background-color: lightgrey;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-  }
+  margin: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #5b7c99;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+ 
+}
+
 
 nav a {
-    color: black;
-    text-decoration: none;
-    margin: 10px;
-    font-size: 25px;
-    font-weight: bold;
-  }
+  color: rgb(255, 98, 0);
+  text-decoration: none;
+  margin: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+nav a:hover {
+  transform: scale(1.2);
+  color: white;
+  transition: transform 0.5s ease-in-out;
+  color: rgb(255, 81, 0);
+  
+}
+
 
 nav img {
   height: 70px;
   object-fit: cover;
   margin: auto;
+}
+
+.sign-out-btn {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(255, 98, 0);
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  transition: background-color 0.5s;
+}
+
+.sign-out-btn:before {
+  content: "Log Out";
+  position: absolute;
+  color:rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.sign-out-btn:hover:before {
+  transform: translateX(0);
 }

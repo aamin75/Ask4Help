@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React from 'react';
 import { createBrowserRouter, RouterProvider, Route, Outlet } from "react-router-dom";
 import Home from './pages/Home/Home';
 import CreatePost from './pages/CreatePost/CreatePost';
@@ -10,6 +10,8 @@ import Notifications from './pages/Notifications/Notifications';
 import SearchPost from './pages/SearchPost/SearchPost';
 import Footer from './components/Footer/Footer';
 import NavBar from "./components/Header/NavBar";
+import LeftSide from './components/Sidebar/LeftSide';
+import RightSide from './components/Sidebar/RightSide'
 import './App.css';
 
 
@@ -17,7 +19,13 @@ const Layout= ()=>{
   return(
     <>
       <NavBar />
-      <Outlet />
+      <div className='main'>
+        <LeftSide />
+        <div className='center'>
+          <Outlet />
+        </div>
+        <RightSide />
+      </div>
       <Footer />
     </>
   )
@@ -67,9 +75,9 @@ const router = createBrowserRouter([
 function App() {
   // const [isAuth, setIsAuth] = useState(false); // may move to another file
   return (
-    <div className="container">
+    <><div className='home-container1'></div><div className="container">
       <RouterProvider router={router} />
-    </div>
+    </div></>
    
   );
 }
